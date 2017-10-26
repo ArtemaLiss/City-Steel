@@ -8,19 +8,24 @@ header {
 	.contact {
 		@include row-flex();
 		@include justify-content(center);
+		.bg {
+			
+			@include col-3();
+			@include col-sm-12();
+		}
 		.phone {
 			@include col();
-			@include col-4();
+			@include col-3();
 			@include col-sm-12();
 		}
 		.email {
 			@include col();
-			@include col-4();
+			@include col-3();
 			@include col-sm-12();
 		}
 		.address {
 			@include col();
-			@include col-4();
+			@include col-3();
 			@include col-sm-12();
 		}
 		.mainBt {
@@ -71,7 +76,7 @@ footer {
 			@include col-3();
 			@include col-sm-12();
 		}
-		.company {
+		.bg {
 			@include col();
 			@include col-3();
 			@include col-sm-12();	

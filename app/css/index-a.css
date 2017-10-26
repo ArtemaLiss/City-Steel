@@ -14,12 +14,16 @@ header .contact {
   justify-content: center;
 }
 
+header .contact .bg {
+  width: calc(25% - 30px);
+}
+
 header .contact .phone {
   box-sizing: border-box;
   margin-left: 15px;
   margin-right: 15px;
   word-wrap: break-word;
-  width: calc(33.33333% - 30px);
+  width: calc(25% - 30px);
 }
 
 header .contact .email {
@@ -27,7 +31,7 @@ header .contact .email {
   margin-left: 15px;
   margin-right: 15px;
   word-wrap: break-word;
-  width: calc(33.33333% - 30px);
+  width: calc(25% - 30px);
 }
 
 header .contact .address {
@@ -35,7 +39,7 @@ header .contact .address {
   margin-left: 15px;
   margin-right: 15px;
   word-wrap: break-word;
-  width: calc(33.33333% - 30px);
+  width: calc(25% - 30px);
 }
 
 header .contact .mainBt {
@@ -118,7 +122,7 @@ footer .container .address {
   width: calc(25% - 30px);
 }
 
-footer .container .company {
+footer .container .bg {
   box-sizing: border-box;
   margin-left: 15px;
   margin-right: 15px;
@@ -127,6 +131,10 @@ footer .container .company {
 }
 
 @media screen and (max-width: 780px) {
+  header .contact .bg {
+    width: calc(100% - 30px);
+  }
+
   header .contact .phone {
     width: calc(100% - 30px);
   }
@@ -163,7 +171,7 @@ footer .container .company {
     width: calc(100% - 30px);
   }
 
-  footer .container .company {
+  footer .container .bg {
     width: calc(100% - 30px);
   }
 
