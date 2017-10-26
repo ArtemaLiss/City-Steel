@@ -1,0 +1,118 @@
+@import '../libs/smart-grid.scss';
+
+
+//////////////////////-> Header <-\\\\\\\\\\\\\\\\\\\\\\\\\\\
+header {
+	@include row-flex();
+	@include justify-content(center);
+	.contact {
+		@include row-flex();
+		@include justify-content(center);
+		.phone {
+			@include col();
+			@include col-4();
+			@include col-sm-12();
+		}
+		.email {
+			@include col();
+			@include col-4();
+			@include col-sm-12();
+		}
+		.address {
+			@include col();
+			@include col-4();
+			@include col-sm-12();
+		}
+		.mainBt {
+			@include col();
+			@include col-3();
+			@include col-sm-12();
+		}
+	}
+}
+//////////////////////-> Content <-\\\\\\\\\\\\\\\\\\\\\\\\\\\
+section#content {
+	@include row-flex();
+	@include justify-content(center);
+	.container {
+		@include row-flex();
+		@include justify-content(center);
+		.nav-menu {
+			@include col();
+			@include col-4();
+			@include col-sm-12();
+		}
+		.content-info {
+			@include col();
+			@include col-8();
+			@include col-sm-12();
+		}
+	}
+}
+//////////////////////-> Footer <-\\\\\\\\\\\\\\\\\\\\\\\\\\\
+footer {
+	@include row-flex();
+	@include justify-content(center);
+	.container {
+		@include row-flex();
+		@include justify-content(center);
+		.phone {
+			@include col();
+			@include col-3();
+			@include col-sm-12();
+		}
+		.email {
+			@include col();
+			@include col-3();
+			@include col-sm-12();
+		}
+		.address {
+			@include col();
+			@include col-3();
+			@include col-sm-12();
+		}
+		.company {
+			@include col();
+			@include col-3();
+			@include col-sm-12();	
+		}
+	}
+}
+//////////////////////-> Media <-\\\\\\\\\\\\\\\\\\\\\\\\\\\
+@media screen and (max-width: 780px) {
+	body,html {
+		font-size: 13px;
+	}
+	header {
+		.contact {
+			div {
+				margin-bottom: 1.5rem;
+				border: none;
+			}
+		}
+	}
+	footer {
+		.container {
+			div {
+				margin-bottom: 1.5rem;
+				border: none;	
+			}
+			.company {
+				text-align: center;
+			}
+		}
+	}
+}
+@media screen and (max-width: 480px) {
+	.content-info {
+		margin-top: 3rem;
+	}
+	body,html {
+		font-size: 11px;
+	}
+	.bg {
+		span {
+			font-size: 3rem !important;
+		}
+	}
+}
